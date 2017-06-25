@@ -32,8 +32,8 @@ app.get('/', home);
 app.use('/login/callback', callback);
 
 
-const OAUTH_KEY     = 'aaec820f44048f24ed55cd1a77783dd0eda2b046';
-const OAUTH_SECRET  = 'e27890cfa2fc0274072fc8db93d53ef5f0909710';
+const OAUTH_KEY     = process.env.OAUTH_KEY;
+const OAUTH_SECRET  = process.env.OAUTH_SECRET;
 const BASEPATH      = 'https://gitter.im/';
 const REDIRECT      = 'http://localhost:7000/login/callback';
 const OAuth2 = OAuth.OAuth2;
