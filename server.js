@@ -1,7 +1,4 @@
 import qs from 'qs'
-import { fetchCounter } from './api/counter'
-//import { renderToString } from 'react-dom/server'
-
 import path from 'path'
 import Express from 'express'
 import OAuth from 'oauth'
